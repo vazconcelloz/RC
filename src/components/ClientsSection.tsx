@@ -21,9 +21,9 @@ type ClientLogo = {
 
 const clientsRow1: ClientLogo[] = [
   { name: "Sorridents", logo: logoSorridents },
-  { name: "LAAV", logo: logoLaav, logoClassName: "h-[280%] w-[280%] max-h-none max-w-none" },
+  { name: "LAAV", logo: logoLaav, logoClassName: "scale-[3.1]" },
   { name: "Frison", logo: logoFrison },
-  { name: "GiO", logo: logoGiO, logoClassName: "h-[155%] w-[155%] max-h-none max-w-none" },
+  { name: "GiO", logo: logoGiO, logoClassName: "h-[165%] w-[165%] max-h-none max-w-none" },
   { name: "OralUnic", logo: logoOralunic, logoClassName: "translate-y-1" },
   { name: "MKT4U", logo: logoMkt4u },
   { name: "Odontoclinic", logo: logoOdontoclinic },
@@ -31,10 +31,10 @@ const clientsRow1: ClientLogo[] = [
 
 const clientsRow2: ClientLogo[] = [
   { name: "Abccom", logo: logoAbccom },
-  { name: "Hurst", logo: logoHurst, logoClassName: "h-[185%] w-[185%] max-h-none max-w-none" },
+  { name: "Hurst", logo: logoHurst, logoClassName: "scale-[2.0]" },
   { name: "Lenvie", logo: logoLenvie },
-  { name: "Medassist", logo: logoMedassist, logoClassName: "scale-150" },
-  { name: "Specialist", logo: logoSpecialist, logoClassName: "h-[151%] w-[200%] max-h-none max-w-none" },
+  { name: "Medassist", logo: logoMedassist, logoClassName: "scale-[1.8]" },
+  { name: "Specialist", logo: logoSpecialist, logoClassName: "h-[165%] w-[215%] max-h-none max-w-none" },
   { name: "Transripoli", logo: logoTransripoli },
   { name: "Dupps", logo: logoDupps },
 ];
