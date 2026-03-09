@@ -9,7 +9,7 @@ const Header = () => {
   return (
     <header className="sticky top-0 z-50 bg-background border-b border-border shadow-sm">
       <div className="container flex items-center justify-between h-16 px-4 md:px-8">
-        <a href="/" className="flex items-center gap-2">
+        <a href="#/" className="flex items-center gap-2">
           <img src={logoFbn} alt="Grupo FBN" className="h-14 w-auto" />
         </a>
 

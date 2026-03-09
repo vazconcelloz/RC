@@ -33,7 +33,7 @@ const WhySection = () => {
           empresas escolheram a FBN?
         </h2>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-12">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mt-12">
           {features.map((feature, index) => (
             <div
               key={index}
