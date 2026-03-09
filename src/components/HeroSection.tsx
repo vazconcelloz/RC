@@ -3,6 +3,10 @@ import { ArrowRight, Play } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const HeroSection = () => {
+  const scrollToForm = () => {
+    document.getElementById("formulario-estudo")?.scrollIntoView({ behavior: "smooth", block: "start" });
+  };
+
   return (
     <section className="relative bg-primary">
       <div className="container px-4 md:px-8 py-14 md:py-20">
@@ -29,26 +33,29 @@ const HeroSection = () => {
           {/* CTA Side */}
           <div className="text-primary-foreground text-center md:text-left">
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-heading font-extrabold leading-tight">
-              O Plano de saúde ideal para{" "}
+              O Plano de saúde
+              <br />
+              ideal para
+              <br />
               <span className="block text-primary-foreground/90">
                 <strong>sua empresa</strong>
               </span>
             </h1>
 
             <p className="mt-4 text-primary-foreground/85 text-base md:text-lg leading-relaxed max-w-xl mx-auto md:mx-0">
-              Mais de 1.200 empresas já encontraram o plano ideal com nossos estudos especializadas.
+              Mais de 1.200 empresas já encontraram o plano ideal
+              <br />
+              com nossos estudos especializados.
             </p>
 
             <div className="mt-4 space-y-3 max-w-sm mx-auto md:mx-0">
               <Button
-                asChild
                 size="lg"
+                onClick={scrollToForm}
                 className="w-full justify-between bg-primary-foreground hover:bg-primary-foreground/90 text-primary font-heading font-bold text-base h-14 shadow-lg"
               >
-                <a href="#formulario-estudo">
-                  <span>Realizar seu Estudo</span>
-                  <ArrowRight className="h-5 w-5" />
-                </a>
+                <span>Realizar seu Estudo</span>
+                <ArrowRight className="h-5 w-5" />
               </Button>
             </div>
           </div>

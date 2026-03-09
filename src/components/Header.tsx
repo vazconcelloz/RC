@@ -2,6 +2,10 @@ import logoFbn from "@/assets/logo-fbn.png";
 import { Button } from "@/components/ui/button";
 
 const Header = () => {
+  const scrollToForm = () => {
+    document.getElementById("formulario-estudo")?.scrollIntoView({ behavior: "smooth", block: "start" });
+  };
+
   return (
     <header className="sticky top-0 z-50 bg-background border-b border-border shadow-sm">
       <div className="container flex items-center justify-between h-16 px-4 md:px-8">
@@ -17,8 +21,8 @@ const Header = () => {
             </a>
           </nav>
 
-          <Button asChild size="sm" className="font-semibold">
-            <a href="#formulario-estudo">Realizar Estudo</a>
+          <Button size="sm" className="font-semibold" onClick={scrollToForm}>
+            Realizar Estudo
           </Button>
 
         </div>

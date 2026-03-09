@@ -35,6 +35,10 @@ const faqs = [
 ];
 
 const FAQSection = () => {
+  const scrollToForm = () => {
+    document.getElementById("formulario-estudo")?.scrollIntoView({ behavior: "smooth", block: "start" });
+  };
+
   return (
     <section className="py-16 md:py-24 bg-background">
       <div className="container px-4 md:px-8 max-w-4xl">
@@ -56,8 +60,8 @@ const FAQSection = () => {
                   <span key={`${faq.question}-part-${partIndex}`}>
                     <span className="whitespace-pre-line">{part}</span>
                     {partIndex < allParts.length - 1 && (
-                      <Button asChild variant="link" className="h-auto p-0 align-baseline font-semibold">
-                        <a href="#formulario-estudo">Realizar Estudo</a>
+                      <Button variant="link" className="h-auto p-0 align-baseline font-semibold" onClick={scrollToForm}>
+                        Realizar Estudo
                       </Button>
                     )}
                   </span>
