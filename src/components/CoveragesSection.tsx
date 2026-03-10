@@ -16,7 +16,7 @@ const coverages = [
     icon: ChartNoAxesColumn,
     title: "Análises preventivas",
     description:
-      "Mantemos análise frequente do seu contrato, evitando surpresas negativas, como mudanças e reajustes elevados.",
+      "Monitoramos seu contrato constantemente para evitar surpresas negativas, como mudanças inesperadas e reajustes elevados.",
   },
   {
     icon: Handshake,
