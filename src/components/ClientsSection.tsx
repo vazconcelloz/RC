@@ -9,7 +9,7 @@ import logoMkt4u from "@/assets/Logo-MKT4U.png";
 import logoOdontoclinic from "@/assets/Logo-Odontoclinic.png";
 import logoOralunic from "@/assets/Logo-Oralunic.png";
 import logoSorridents from "@/assets/Logo-Sorridents.png";
-import logoSpecialist from "@/assets/Logo-Specialist.png";
+import logoSpecialist from "@/assets/Logo-Specialist.jpg";
 import logoTransripoli from "@/assets/transripoli-logo.png";
 import logoDupps from "@/assets/Logo-Dupps.png";
 
@@ -31,10 +31,10 @@ const clientsRow1: ClientLogo[] = [
 
 const clientsRow2: ClientLogo[] = [
   { name: "Abccom", logo: logoAbccom },
-  { name: "Hurst", logo: logoHurst, logoClassName: "scale-[1.75]" },
-  { name: "Lenvie", logo: logoLenvie },
   { name: "Medassist", logo: logoMedassist, logoClassName: "scale-[1.8]" },
-  { name: "Specialist", logo: logoSpecialist, logoClassName: "h-[175%] w-[225%] max-h-none max-w-none" },
+  { name: "Lenvie", logo: logoLenvie },
+  { name: "Hurst", logo: logoHurst, logoClassName: "scale-[1.75]" },
+  { name: "Specialist", logo: logoSpecialist, logoClassName: "h-[250%] w-[320%] max-h-none max-w-none" },
   { name: "Transripoli", logo: logoTransripoli },
   { name: "Dupps", logo: logoDupps },
 ];

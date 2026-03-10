@@ -1,4 +1,9 @@
 import { BriefcaseBusiness, Stethoscope, Handshake, LayoutDashboard, ShieldCheck, MapPinned } from "lucide-react";
+import logoAmil from "@/assets/Logo-Amil.png";
+import logoBradesco from "@/assets/Logo-Bradesco.png";
+import logoOmint from "@/assets/Logo-Omint.png";
+import logoPorto from "@/assets/Logo-Porto.webp";
+import logoSulamerica from "@/assets/Logo-Sulamerica.webp";
 
 const coverages = [
   {
@@ -39,9 +44,17 @@ const coverages = [
   },
 ];
 
+const healthOperators = [
+  { name: "Amil", logo: logoAmil },
+  { name: "Bradesco Saude", logo: logoBradesco },
+  { name: "Omint", logo: logoOmint },
+  { name: "Porto", logo: logoPorto },
+  { name: "SulAmerica", logo: logoSulamerica },
+];
+
 const CoveragesSection = () => {
   return (
-    <section className="py-16 md:py-24 bg-section-gray">
+    <section className="pt-16 pb-8 md:pt-24 md:pb-10 bg-section-gray">
       <div className="container px-4 md:px-8">
         <h2 className="text-2xl md:text-3xl font-heading font-bold text-center text-primary mb-12">
           Coberturas e <span className="text-primary">Assistências</span>
@@ -61,6 +74,28 @@ const CoveragesSection = () => {
               <p className="text-sm text-muted-foreground leading-relaxed">{item.description}</p>
             </div>
           ))}
+        </div>
+
+        <div className="mt-12 md:mt-14">
+          <h3 className="text-lg md:text-xl font-heading font-semibold text-center text-primary mb-6">
+            Tenha acesso às melhores operadoras do mercado.
+          </h3>
+
+          <div className="w-full max-w-5xl mx-auto grid grid-cols-2 md:grid-cols-5 gap-6 md:gap-8">
+            {healthOperators.map((operator) => (
+              <div
+                key={operator.name}
+                className="h-24 px-4 flex items-center justify-center"
+              >
+                <img
+                  src={operator.logo}
+                  alt={`Logo ${operator.name}`}
+                  className="max-h-12 w-full object-contain"
+                  loading="lazy"
+                />
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>
