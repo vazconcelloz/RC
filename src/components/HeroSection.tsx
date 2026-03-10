@@ -26,26 +26,26 @@ const HeroSection = () => {
               </div>
             </div>
             <p className="absolute bottom-4 left-4 right-4 text-center text-primary-foreground font-heading font-bold text-lg md:text-xl">
-              Planos de saúde não são todos iguais
+              Seguros automotivos não são todos iguais
             </p>
           </div>
 
           {/* CTA Side */}
           <div className="text-primary-foreground text-center md:text-left">
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-heading font-extrabold leading-tight">
-              O Plano de saúde
+              O Seguro ideal
               <br />
-              ideal para
+              para seu veículo
               <br />
               <span className="block text-primary-foreground/90">
-                <strong>sua empresa</strong>
+                <strong>premium ou blindado</strong>
               </span>
             </h1>
 
             <p className="mt-4 text-primary-foreground/85 text-base md:text-lg leading-relaxed max-w-xl mx-auto md:mx-0">
-              Mais de 1.200 empresas já encontraram o plano ideal
+              Mais de 10.000 clientes já escolheram a FBN para encontrar coberturas adequadas e evitar surpresas no momento do sinistro.
               <br />
-              com nossos estudos personalizados.
+              
             </p>
 
             <div className="mt-4 space-y-3 max-w-sm mx-auto md:mx-0">
@@ -54,7 +54,7 @@ const HeroSection = () => {
                 onClick={scrollToForm}
                 className="w-full justify-between bg-primary-foreground hover:bg-primary-foreground/90 text-primary font-heading font-bold text-base h-14 shadow-lg"
               >
-                <span>Realizar Estudo</span>
+                <span>Falar com especialista</span>
                 <ArrowRight className="h-5 w-5" />
               </Button>
             </div>

@@ -1,8 +1,9 @@
 import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
+import ProblemsSection from "@/components/ProblemsSection";
 import WhySection from "@/components/WhySection";
-import AboutSection from "@/components/AboutSection";
 import ClientsSection from "@/components/ClientsSection";
+import AboutSection from "@/components/AboutSection";
 import CoveragesSection from "@/components/CoveragesSection";
 import CTASection from "@/components/CTASection";
 import FAQSection from "@/components/FAQSection";
@@ -14,6 +15,7 @@ const Index = () => {
       <Header />
       <main className="flex-1">
         <HeroSection />
+        <ProblemsSection />
         <WhySection />
         <ClientsSection />
         <AboutSection />

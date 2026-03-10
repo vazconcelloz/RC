@@ -9,28 +9,28 @@ import { Button } from "@/components/ui/button";
 const faqs = [
   {
     question: "Como funciona o estudo da FBN?",
-    answer: `O Estudo FBN é uma análise feita por especialistas para identificar o plano mais adequado para sua empresa.
-    Avaliamos o perfil dos colaboradores, região de atendimento, rede hospitalar desejada e custo-benefício entre as operadoras. Com base nisso, apresentamos as melhores opções de plano para sua empresa tomar a decisão com mais segurança.`,
+    answer: `O Estudo FBN e uma analise feita por especialistas para identificar o seguro automotivo mais adequado para o seu perfil.
+    Avaliamos o tipo de veiculo, rotina de uso, regiao de circulacao e coberturas necessarias. Com base nisso, apresentamos opcoes com melhor equilibrio entre protecao e investimento.`,
   },
   {
-    question: "Quais são as condições para contratar um plano de saúde empresarial?",
+    question: "Quais informacoes sao necessarias para cotar um seguro automotivo?",
     answer:
-      "Para contratar um plano de saúde empresarial é necessário possuir um CNPJ ativo e atender ao número mínimo de vidas exigido pela operadora, que geralmente começa a partir de 2 ou 3 pessoas. Dependendo do plano, também é possível incluir sócios, colaboradores e seus dependentes.",
+      "Normalmente solicitamos dados basicos do condutor principal, informacoes do veiculo e historico de uso. Esses dados ajudam a montar uma cotacao precisa e alinhada ao seu risco.",
   },
   {
-    question: "O plano empresarial tem carência?",
+    question: "O seguro automotivo tem carencia?",
     answer:
-      "A carência pode variar conforme a operadora e o plano escolhido. Em alguns casos, podem existir condições especiais com redução ou isenção de carência.",
+      "Em geral, o seguro passa a valer conforme as regras da proposta e a confirmacao de vigencia da seguradora. A equipe da FBN orienta cada etapa para que voce saiba exatamente quando sua cobertura inicia.",
   },
   {
-    question: "Posso incluir dependentes no plano?",
+    question: "Posso personalizar as coberturas do meu seguro?",
     answer:
-      "Sim. Em muitos planos empresariais é possível incluir cônjuge, filhos e outros dependentes, conforme as regras da operadora.",
+      "Sim. E possivel ajustar franquia, cobertura para terceiros, vidros, carro reserva, assistencia 24h e outras protecoes adicionais conforme sua necessidade.",
   },
   {
-    question: "Como faco para iniciar meu estudo?",
+    question: "Como faco para iniciar minha cotacao?",
     answer:
-      "Clique em [CTA_ESTUDO] e envie suas informacoes basicas. A equipe da FBN entra em contato para montar a melhor proposta.",
+      "Clique em [CTA_ESTUDO] e envie suas informacoes basicas. A equipe da FBN entra em contato para montar a melhor proposta de seguro automotivo.",
   },
 ];
 

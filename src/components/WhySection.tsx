@@ -1,37 +1,53 @@
-import { HandCoins, BadgeCheck, ChartNoAxesCombined, HeartHandshake } from "lucide-react";
+import { CarFront, ShieldCheck, FileSearch, Headset } from "lucide-react";
+import logoAmigaDaOficina from "@/assets/Amiga-da-oficina.png";
 
 const features = [
   {
-    icon: HandCoins,
-    title: "8 Milhões\nem economia",
-    description: "Com nossas análises de contrato, garantimos para nossos clientes uma economia de R$ 8.000.000 em 2025.",
+    icon: CarFront,
+    title: "Especialistas em veículos \n premium e blindados",
+    description: "Protegemos veículos de alto valor e blindados com coberturas dimensionadas para cada necessidade.",
   },
   {
-    icon: BadgeCheck,
+    icon: ShieldCheck,
     title: "Atendimento eficiente de verdade",
-    description: "O mercado oferece respostas genéricas e tabelas. Nós entregamos soluções adaptadas à realidade da sua empresa.",
+    description: "O mercado oferece respostas genéricas e tabelas. Nós entregamos soluções adaptadas à sua realidade.",
   },
   {
-    icon: ChartNoAxesCombined,
-    title: "Antecipação e contenção de reajustes",
-    description: "Estratégias validadas para proteger sua empresa nos reajustes anuais.",
+    icon: FileSearch,
+    title: "Cobertura realmente \n adequada",
+    description: "Estruturamos o seguro considerando as necessidades reais do seu veículo e perfil de uso."
   },
   {
-    icon: HeartHandshake,
-    title: "Suporte contínuo e especializado",
-    description: "Nosso suporte não termina após a contratação. Nos tornamos parte da sua equipe.",
+    icon: Headset,
+    title: "Suporte durante todo o contrato",
+    description: "Continuamos ao seu lado após a contratação, acompanhando reajustes e auxiliando em sinistros.",
   },
 ];
 
 const WhySection = () => {
   return (
-    <section className="pt-5 pb-13 md:pt-12 md:pb-24 bg-background">
+    <section className="pt-0 pb-13 md:pt-1 md:pb-24 bg-background">
       <div className="container px-4 md:px-8">
         <h2 className="text-2xl md:text-3xl font-heading font-bold text-center text-foreground">
           Por que{" "}
-          <span className="text-primary">mais de 1.200</span>{" "}
-          empresas escolheram a FBN?
+          <span className="text-primary">mais de 10.000</span>{" "}
+          clientes escolheram a FBN?
         </h2>
+
+        <div className="relative mt-6 max-w-5xl mx-auto rounded-xl border border-primary/20 bg-primary/5 px-5 py-4 pr-20 md:px-6 md:py-5 md:pr-24 text-center overflow-hidden">
+          <img
+            src={logoAmigaDaOficina}
+            alt="Selo Empresa Amiga da Oficina"
+            className="absolute right-3 top-[42%] w-20 -translate-y-1/2 rotate-12 opacity-80 pointer-events-none select-none md:right-5 md:w-24"
+            loading="lazy"
+          />
+          <h3 className="text-sm md:text-base font-heading font-bold text-primary">
+            Reconhecimento no mercado automotivo
+          </h3>
+          <p className="mt-2 text-sm md:text-base text-muted-foreground leading-relaxed">
+            Empresa “Amiga da Oficina”, título concedido pelo Sindirepa, Sindicato nacional da reparação automotiva;
+          </p>
+        </div>
 
         <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mt-12">
           {features.map((feature, index) => (

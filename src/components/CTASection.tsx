@@ -12,19 +12,8 @@ const formatWhatsapp = (value: string) => {
   return `(${digits.slice(0, 2)}) ${digits.slice(2, 7)}-${digits.slice(7)}`;
 };
 
-const formatCnpj = (value: string) => {
-  const digits = value.replace(/\D/g, "").slice(0, 14);
-
-  if (digits.length <= 2) return digits;
-  if (digits.length <= 5) return `${digits.slice(0, 2)}.${digits.slice(2)}`;
-  if (digits.length <= 8) return `${digits.slice(0, 2)}.${digits.slice(2, 5)}.${digits.slice(5)}`;
-  if (digits.length <= 12) return `${digits.slice(0, 2)}.${digits.slice(2, 5)}.${digits.slice(5, 8)}/${digits.slice(8)}`;
-  return `${digits.slice(0, 2)}.${digits.slice(2, 5)}.${digits.slice(5, 8)}/${digits.slice(8, 12)}-${digits.slice(12)}`;
-};
-
 const CTASection = () => {
   const [whatsapp, setWhatsapp] = useState("");
-  const [cnpj, setCnpj] = useState("");
   const [feedbackMessage, setFeedbackMessage] = useState("");
   const [showSuccessPopup, setShowSuccessPopup] = useState(false);
 
@@ -36,9 +25,8 @@ const CTASection = () => {
 
     const nome = String(formData.get("nome") ?? "").trim();
     const email = String(formData.get("email") ?? "").trim();
-    const planoAtivo = String(formData.get("planoAtivo") ?? "").trim();
 
-    if (!nome || !email || !whatsapp.trim() || !cnpj.trim() || !planoAtivo) {
+    if (!nome || !email || !whatsapp.trim()) {
       setFeedbackMessage("Preencha todos os campos para enviar o formulario.");
       setShowSuccessPopup(false);
       return;
@@ -48,7 +36,6 @@ const CTASection = () => {
     setShowSuccessPopup(true);
     form.reset();
     setWhatsapp("");
-    setCnpj("");
   };
 
   return (
@@ -91,29 +78,6 @@ const CTASection = () => {
               />
             </div>
 
-            <div className="space-y-2">
-              <Label htmlFor="cta-cnpj" className="text-primary-foreground font-semibold">*CNPJ:</Label>
-              <Input
-                id="cta-cnpj"
-                name="cnpj"
-                type="text"
-                inputMode="numeric"
-                placeholder="00.000.000/0000-00"
-                value={cnpj}
-                onChange={(event) => setCnpj(formatCnpj(event.target.value))}
-                className="bg-primary-foreground text-primary placeholder:text-primary/60 border-primary-foreground/50"
-                required
-              />
-            </div>
-
-            <div className="space-y-2">
-              <Label htmlFor="cta-plano" className="text-primary-foreground font-semibold">*JÁ POSSUI UM PLANO ATIVO?</Label>
-              <select id="cta-plano" name="planoAtivo" className="flex h-10 w-full rounded-md border border-primary-foreground/50 bg-primary-foreground px-3 py-2 text-sm text-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-foreground/60" required>
-                <option value="">Selecione</option>
-                <option value="sim">Sim</option>
-                <option value="nao">Nao</option>
-              </select>
-            </div>
           </div>
 
           <Button type="submit" size="lg" className="mt-6 w-full md:w-auto bg-primary-foreground text-primary hover:bg-primary-foreground/90 font-heading font-bold text-base h-12">

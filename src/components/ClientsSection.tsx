@@ -1,17 +1,9 @@
-import logoAbccom from "@/assets/Logo-Abccom.png";
+import logoAbla from "@/assets/Logo-Abla.png";
+import logoAmma from "@/assets/Logo-Amma.png";
 import logoFrison from "@/assets/Logo-Frison.png";
-import logoGiO from "@/assets/Logo-GIO.png";
-import logoHurst from "@/assets/Logo-Hurst.png";
 import logoLaav from "@/assets/Logo-LAAV.png";
-import logoLenvie from "@/assets/Logo-Lenvie.png";
-import logoMedassist from "@/assets/Logo-Medassist.png";
-import logoMkt4u from "@/assets/Logo-MKT4U.png";
-import logoOdontoclinic from "@/assets/Logo-Odontoclinic.png";
-import logoOralunic from "@/assets/Logo-Oralunic.png";
-import logoSorridents from "@/assets/Logo-Sorridents.png";
+import logoSindirepa from "@/assets/Logo-Sindirepa.jpg";
 import logoSpecialist from "@/assets/Logo-Specialist.jpg";
-import logoTransripoli from "@/assets/transripoli-logo.png";
-import logoDupps from "@/assets/Logo-Dupps.png";
 
 type ClientLogo = {
   name: string;
@@ -20,23 +12,12 @@ type ClientLogo = {
 };
 
 const clientsRow1: ClientLogo[] = [
-  { name: "Sorridents", logo: logoSorridents },
-  { name: "LAAV", logo: logoLaav, logoClassName: "scale-[3.1]" },
+  { name: "ABLA", logo: logoAbla },
+  { name: "Specialist", logo: logoSpecialist, logoClassName: "scale-[1.35]" },
+  { name: "LAAV", logo: logoLaav, logoClassName: "scale-[2.2]" },
   { name: "Frison", logo: logoFrison },
-  { name: "GiO", logo: logoGiO, logoClassName: "scale-[1.45]" },
-  { name: "OralUnic", logo: logoOralunic, logoClassName: "translate-y-1" },
-  { name: "MKT4U", logo: logoMkt4u },
-  { name: "Odontoclinic", logo: logoOdontoclinic },
-];
-
-const clientsRow2: ClientLogo[] = [
-  { name: "Abccom", logo: logoAbccom },
-  { name: "Medassist", logo: logoMedassist, logoClassName: "scale-[1.8]" },
-  { name: "Lenvie", logo: logoLenvie },
-  { name: "Hurst", logo: logoHurst, logoClassName: "scale-[1.75]" },
-  { name: "Specialist", logo: logoSpecialist, logoClassName: "h-[250%] w-[320%] max-h-none max-w-none" },
-  { name: "Transripoli", logo: logoTransripoli },
-  { name: "Dupps", logo: logoDupps },
+  { name: "Sindirepa", logo: logoSindirepa, logoClassName: "scale-[1.2]" },
+  { name: "AMMA", logo: logoAmma, logoClassName: "scale-[1.2]" },
 ];
 
 const MarqueeRow = ({ clients, direction }: { clients: ClientLogo[]; direction: "left" | "right" }) => {
@@ -44,12 +25,12 @@ const MarqueeRow = ({ clients, direction }: { clients: ClientLogo[]; direction: 
   const animationClass = direction === "left" ? "animate-marquee-left" : "animate-marquee-right";
 
   return (
-    <div className="overflow-hidden relative">
-      <div className={`flex gap-6 w-max ${animationClass}`}>
+    <div className="relative overflow-x-hidden overflow-y-visible py-2">
+      <div className={`flex w-max ${animationClass}`}>
         {doubled.map((client, index) => (
           <div
             key={`${client.name}-${index}`}
-            className="flex items-center justify-center h-16 w-44 p-3 shrink-0"
+            className={`flex items-center justify-center h-20 md:h-24 w-44 p-3 shrink-0 ${client.name === "Specialist" ? "mr-3 md:mr-4" : "mr-8 md:mr-10"}`}
           >
             <img
               src={client.logo}
@@ -66,17 +47,14 @@ const MarqueeRow = ({ clients, direction }: { clients: ClientLogo[]; direction: 
 
 const ClientsSection = () => {
   return (
-    <section className="pt-8 pb-16 md:pt-12 md:pb-24 bg-background overflow-hidden">
-      <div className="container px-4 md:px-8 mb-12">
+    <section className="pt-4 pb-16 md:pt-8 md:pb-24 bg-background overflow-hidden">
+      <div className="container px-4 md:px-8 mb-7 md:mb-8">
         <h2 className="text-2xl md:text-3xl font-heading font-bold text-center text-foreground">
           Empresas que confiam e são clientes da <span className="text-primary">FBN</span>
         </h2>
       </div>
 
-      <div className="flex flex-col gap-6">
-        <MarqueeRow clients={clientsRow1} direction="left" />
-        <MarqueeRow clients={clientsRow2} direction="right" />
-      </div>
+      <MarqueeRow clients={clientsRow1} direction="left" />
     </section>
   );
 };

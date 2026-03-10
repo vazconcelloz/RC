@@ -1,55 +1,42 @@
 import { BriefcaseBusiness, ChartNoAxesColumn, Handshake, LayoutDashboard, ShieldCheck, MapPinned } from "lucide-react";
-import logoAmil from "@/assets/Logo-Amil.png";
-import logoBradesco from "@/assets/Logo-Bradesco.png";
-import logoOmint from "@/assets/Logo-Omint.png";
-import logoPorto from "@/assets/Logo-Porto.webp";
-import logoSulamerica from "@/assets/Logo-Sulamerica.webp";
 
 const coverages = [
   {
     icon: BriefcaseBusiness,
-    title: "Entregamos soluções personalizadas",
+    title: "Cobertura personalizada para o seu perfil",
     description:
-      "Escolha os planos que mais se encaixam no seu perfil e no seu investimento, na FBN você encontra o que precisa para ter o melhor custo benefício do mercado para sua empresa.",
+      "Estruturamos o seguro de acordo com o uso do veículo, região de circulação e nível de risco para evitar falhas de proteção.",
   },
   {
     icon: ChartNoAxesColumn,
-    title: "Análises preventivas",
+    title: "Analise de risco e custo-beneficio",
     description:
-      "Monitoramos seu contrato constantemente para evitar surpresas negativas, como mudanças inesperadas e reajustes elevados.",
+      "Comparamos opções entre seguradoras para equilibrar franquia, coberturas e valor final sem perder qualidade.",
   },
   {
     icon: Handshake,
-    title: "Flexibilidade de escolha",
+    title: "Cobertura para terceiros e danos materiais",
     description:
-      "Escolha seu médico ou tratamento e conte com a nossa assessoria para antecipar previsão e obter reembolsos.",
+      "Proteção para responsabilidades civis e imprevistos que envolvam outros veiculos, pessoas e patrimonio.",
   },
   {
     icon: LayoutDashboard,
-    title: "Portal Personalizado",
+    title: "Assistencia 24h completa",
     description:
-      "A FBN disponibiliza um portal personalizado para suporte e movimentação de segurados, facilitando a vida do seu RH.",
+      "Guincho, pane seca, troca de pneu, chaveiro e suporte emergencial para voce nao ficar parado na rua.",
   },
   {
     icon: ShieldCheck,
-    title: "Acesso privilegiado",
+    title: "Protecoes adicionais",
     description:
-      "Conheça seus direitos. A FBN faz questão de mostrar os benefícios disponíveis. Informações atualizadas, podem trazer grandes economias, se bem utilizado.",
+      "Inclua coberturas como vidros, carro reserva, eventos da natureza e perda parcial conforme sua necessidade.",
   },
   {
     icon: MapPinned,
-    title: "Seu plano onde você precisa",
+    title: "Suporte em sinistro do inicio ao fim",
     description:
-      "Analisamos e adequamos a oferrta baseando-se nas localidades que são importantes para você.",
+      "Acompanhamos todo o processo de acionamento para reduzir burocracia e acelerar cada etapa da sua indenizacao.",
   },
-];
-
-const healthOperators = [
-  { name: "Amil", logo: logoAmil },
-  { name: "Bradesco Saude", logo: logoBradesco },
-  { name: "Omint", logo: logoOmint },
-  { name: "Porto", logo: logoPorto },
-  { name: "SulAmerica", logo: logoSulamerica },
 ];
 
 const CoveragesSection = () => {
@@ -74,28 +61,6 @@ const CoveragesSection = () => {
               <p className="text-sm text-muted-foreground leading-relaxed">{item.description}</p>
             </div>
           ))}
-        </div>
-
-        <div className="mt-12 md:mt-14">
-          <h3 className="text-lg md:text-xl font-heading font-semibold text-center text-primary mb-6">
-            Tenha acesso às melhores operadoras do mercado.
-          </h3>
-
-          <div className="w-full max-w-5xl mx-auto grid grid-cols-2 md:grid-cols-5 gap-6 md:gap-8">
-            {healthOperators.map((operator) => (
-              <div
-                key={operator.name}
-                className="h-24 px-4 flex items-center justify-center"
-              >
-                <img
-                  src={operator.logo}
-                  alt={`Logo ${operator.name}`}
-                  className="max-h-12 w-full object-contain"
-                  loading="lazy"
-                />
-              </div>
-            ))}
-          </div>
         </div>
       </div>
     </section>
