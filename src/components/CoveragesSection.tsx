@@ -9,7 +9,7 @@ const coverages = [
   },
   {
     icon: ChartNoAxesColumn,
-    title: "Analise de risco e custo-beneficio",
+    title: "Análise de risco e custo-benefício",
     description:
       "Comparamos opções entre seguradoras para equilibrar franquia, coberturas e valor final sem perder qualidade.",
   },
@@ -17,25 +17,25 @@ const coverages = [
     icon: Handshake,
     title: "Cobertura para terceiros e danos materiais",
     description:
-      "Proteção para responsabilidades civis e imprevistos que envolvam outros veiculos, pessoas e patrimonio.",
+      "Proteção para responsabilidades civis e imprevistos que envolvam outros veículos, pessoas e patrimônio.",
   },
   {
     icon: LayoutDashboard,
-    title: "Assistencia 24h completa",
+    title: "Assistência 24h completa",
     description:
-      "Guincho, pane seca, troca de pneu, chaveiro e suporte emergencial para voce nao ficar parado na rua.",
+      "Guincho, pane seca, troca de pneu, chaveiro e suporte emergencial para você não ficar parado na rua.",
   },
   {
     icon: ShieldCheck,
-    title: "Protecoes adicionais",
+    title: "Proteções adicionais",
     description:
       "Inclua coberturas como vidros, carro reserva, eventos da natureza e perda parcial conforme sua necessidade.",
   },
   {
     icon: MapPinned,
-    title: "Suporte em sinistro do inicio ao fim",
+    title: "Suporte em sinistro do início ao fim",
     description:
-      "Acompanhamos todo o processo de acionamento para reduzir burocracia e acelerar cada etapa da sua indenizacao.",
+      "Acompanhamos todo o processo de acionamento para reduzir burocracia e acelerar cada etapa da sua indenização.",
   },
 ];
 

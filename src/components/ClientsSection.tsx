@@ -13,8 +13,8 @@ type ClientLogo = {
 
 const clientsRow1: ClientLogo[] = [
   { name: "ABLA", logo: logoAbla },
-  { name: "AMMA", logo: logoAmma, logoClassName: "scale-[1.2]" },
-  { name: "LAAV", logo: logoLaav, logoClassName: "scale-[2.2]" },
+  { name: "AMMA", logo: logoAmma, logoClassName: "scale-[1.1]" },
+  { name: "LAAV", logo: logoLaav, logoClassName: "scale-[1.65]" },
   { name: "Frison", logo: logoFrison },
   { name: "Sindirepa", logo: logoSindirepa, logoClassName: "scale-[1.2]" },
   { name: "Specialist", logo: logoSpecialist, logoClassName: "scale-[1.35]" },
@@ -25,17 +25,17 @@ const MarqueeRow = ({ clients, direction }: { clients: ClientLogo[]; direction: 
   const animationClass = direction === "left" ? "animate-marquee-left" : "animate-marquee-right";
 
   return (
-    <div className="relative overflow-x-hidden overflow-y-visible py-2">
-      <div className={`flex w-max ${animationClass}`}>
+    <div className="relative w-full overflow-hidden py-2 [touch-action:pan-y]">
+      <div className={`flex min-w-max will-change-transform ${animationClass}`}>
         {doubled.map((client, index) => (
           <div
             key={`${client.name}-${index}`}
-            className={`flex items-center justify-center h-20 md:h-24 w-44 p-3 shrink-0 ${client.name === "Specialist" ? "mr-3 md:mr-4" : "mr-8 md:mr-10"}`}
+            className={`flex items-center justify-center h-20 md:h-24 w-44 p-3 shrink-0 overflow-hidden ${client.name === "Specialist" ? "mr-3 md:mr-4" : "mr-8 md:mr-10"}`}
           >
             <img
               src={client.logo}
               alt={`Logo ${client.name}`}
-              className={`h-full w-full object-contain ${client.logoClassName ?? ""}`}
+              className={`h-full w-full object-contain origin-center ${client.logoClassName ?? ""}`}
               loading="lazy"
             />
           </div>
@@ -47,10 +47,10 @@ const MarqueeRow = ({ clients, direction }: { clients: ClientLogo[]; direction: 
 
 const ClientsSection = () => {
   return (
-    <section className="pt-4 pb-16 md:pt-8 md:pb-24 bg-background overflow-hidden">
+    <section className="pt-4 pb-16 md:pt-8 md:pb-24 bg-background overflow-x-clip">
       <div className="container px-4 md:px-8 mb-7 md:mb-8">
         <h2 className="text-2xl md:text-3xl font-heading font-bold text-center text-foreground">
-          Empresas que confiam e são clientes da <span className="text-primary">FBN</span>
+          Parcerias estratégicas com grandes entidades do <span className="text-primary">setor automotivo</span>
         </h2>
       </div>
 

@@ -9,28 +9,28 @@ import { Button } from "@/components/ui/button";
 const faqs = [
   {
     question: "Como funciona o estudo da FBN?",
-    answer: `O Estudo FBN e uma analise feita por especialistas para identificar o seguro automotivo mais adequado para o seu perfil.
-    Avaliamos o tipo de veiculo, rotina de uso, regiao de circulacao e coberturas necessarias. Com base nisso, apresentamos opcoes com melhor equilibrio entre protecao e investimento.`,
+    answer: `O Estudo FBN é uma análise feita por especialistas para identificar o seguro automotivo mais adequado para o seu perfil.
+    Avaliamos o tipo de veículo, rotina de uso, região de circulação e coberturas necessárias. Com base nisso, apresentamos opções com melhor equilíbrio entre proteção e investimento.`,
   },
   {
-    question: "Quais informacoes sao necessarias para cotar um seguro automotivo?",
+    question: "Quais informações são necessárias para cotar um seguro automotivo?",
     answer:
-      "Normalmente solicitamos dados basicos do condutor principal, informacoes do veiculo e historico de uso. Esses dados ajudam a montar uma cotacao precisa e alinhada ao seu risco.",
+      "Normalmente solicitamos dados básicos do condutor principal, informações do veículo e histórico de uso. Esses dados ajudam a montar uma cotação precisa e alinhada ao seu risco.",
   },
   {
-    question: "O seguro automotivo tem carencia?",
+    question: "O seguro automotivo tem carência?",
     answer:
-      "Em geral, o seguro passa a valer conforme as regras da proposta e a confirmacao de vigencia da seguradora. A equipe da FBN orienta cada etapa para que voce saiba exatamente quando sua cobertura inicia.",
+      "Em geral, o seguro passa a valer conforme as regras da proposta e a confirmação de vigência da seguradora. A equipe da FBN orienta cada etapa para que você saiba exatamente quando sua cobertura inicia.",
   },
   {
     question: "Posso personalizar as coberturas do meu seguro?",
     answer:
-      "Sim. E possivel ajustar franquia, cobertura para terceiros, vidros, carro reserva, assistencia 24h e outras protecoes adicionais conforme sua necessidade.",
+      "Sim. É possível ajustar franquia, cobertura para terceiros, vidros, carro reserva, assistência 24h e outras proteções adicionais conforme sua necessidade.",
   },
   {
-    question: "Como faco para iniciar minha cotacao?",
+    question: "Como faço para iniciar minha cotação?",
     answer:
-      "Clique em [CTA_ESTUDO] e envie suas informacoes basicas. A equipe da FBN entra em contato para montar a melhor proposta de seguro automotivo.",
+      "Clique em [CTA_ESTUDO] e envie suas informações básicas. A equipe da FBN entra em contato para montar a melhor proposta de seguro automotivo.",
   },
 ];
 
@@ -46,7 +46,7 @@ const FAQSection = () => {
           Perguntas <span className="text-primary">Frequentes</span>
         </h2>
         <p className="text-center text-muted-foreground mb-10">
-          Tire suas duvidas antes de solicitar seu estudo.
+          Tire suas dúvidas antes de solicitar seu estudo.
         </p>
 
         <Accordion type="single" collapsible className="w-full">
