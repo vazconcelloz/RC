@@ -15,7 +15,7 @@ const faqs = [
   {
     question: "Quais informações são necessárias para realizar o estudo do seguro automotivo?",
     answer:
-      "Normalmente solicitamos dados básicos do condutor principal, informações do veículo e histórico de uso. Esses dados ajudam a montar uma estudo preciso e alinhado ao seu risco.",
+      "Normalmente solicitamos dados básicos do condutor principal, informações do veículo e histórico de uso. Esses dados ajudam a montar um estudo preciso e alinhado ao seu risco.",
   },
   {
     question: "O seguro automotivo tem carência?",

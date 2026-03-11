@@ -54,7 +54,7 @@ const HeroSection = () => {
                 onClick={scrollToForm}
                 className="w-full justify-between bg-primary-foreground hover:bg-primary-foreground/90 text-primary font-heading font-bold text-base h-14 shadow-lg"
               >
-                <span>Falar com especialista</span>
+                <span>Realizar estudo</span>
                 <ArrowRight className="h-5 w-5" />
               </Button>
             </div>
