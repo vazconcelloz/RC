@@ -80,6 +80,10 @@ const CTASection = () => {
 
           </div>
 
+          <p className="mt-6 text-sm text-primary-foreground/90">
+            Ao enviar, concordo em receber comunicações e conteúdos da FBN.
+          </p>
+
           <Button type="submit" size="lg" className="mt-6 w-full md:w-auto bg-primary-foreground text-primary hover:bg-primary-foreground/90 font-heading font-bold text-base h-12">
             Enviar dados para estudo
           </Button>
