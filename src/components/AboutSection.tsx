@@ -21,7 +21,7 @@ const AboutSection = () => {
               pela satisfação de nossos clientes.
             </p>
             <p>
-              Com a FBN, você está seguro para fazer os melhores negócios!
+              Com a FBN, você protege o seu patrimônio para crescer com mais segurança!
               <strong className="block text-primary mt-3 text-2xl md:text-3xl font-extrabold leading-tight">
                 Confiança não tem preço, tem valor!
               </strong>
@@ -30,7 +30,7 @@ const AboutSection = () => {
           <div className="rounded-xl overflow-hidden border border-border bg-card md:-mt-16 lg:-mt-20">
             <img
               src={escritorioImage}
-              alt="Escritorio da FBN"
+              alt="Escritório da FBN"
               className="w-full h-full object-cover min-h-[260px]"
             />
           </div>

@@ -15,7 +15,7 @@ const HeroSection = () => {
           <div className="relative rounded-xl overflow-hidden h-52 md:h-64 lg:h-72 bg-primary-foreground/10">
             <img
               src={heroBg}
-              alt="Planos de saúde"
+              alt="Seguro de responsabilidade civil"
               className="absolute inset-0 w-full h-full object-cover"
             />
             <div className="pointer-events-none absolute -inset-1 rounded-2xl bg-primary-foreground/20 blur-md animate-pulse" />
@@ -26,24 +26,22 @@ const HeroSection = () => {
               </div>
             </div>
             <p className="absolute bottom-4 left-4 right-4 text-center text-primary-foreground font-heading font-bold text-lg md:text-xl">
-              Seguros automotivos não são todos iguais
+              Seguro de responsabilidade civil não é tudo igual
             </p>
           </div>
 
           {/* CTA Side */}
           <div className="text-primary-foreground text-center md:text-left">
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-heading font-extrabold leading-tight">
-              O Seguro ideal
-              <br />
-              para seu veículo
+              Responsabilidade Civil
               <br />
               <span className="block text-primary-foreground/90">
-                <strong>premium ou blindado</strong>
+                <strong>para empresas e profissionais</strong>
               </span>
             </h1>
 
             <p className="mt-4 text-primary-foreground/85 text-base md:text-lg leading-relaxed max-w-xl mx-auto md:mx-0">
-              Mais de 10.000 clientes já escolheram a FBN para encontrar coberturas adequadas e evitar surpresas no momento do sinistro.
+              Milhares de clientes já escolheram a FBN para estruturar suas apólices de responsabilidade civil.
               <br />
               
             </p>
@@ -54,7 +52,7 @@ const HeroSection = () => {
                 onClick={scrollToForm}
                 className="w-full justify-between bg-primary-foreground hover:bg-primary-foreground/90 text-primary font-heading font-bold text-base h-14 shadow-lg"
               >
-                <span>Realizar estudo</span>
+                <span>Solicitar cotação</span>
                 <ArrowRight className="h-5 w-5" />
               </Button>
             </div>

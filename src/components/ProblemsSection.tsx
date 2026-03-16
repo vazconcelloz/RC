@@ -5,14 +5,14 @@ const ProblemsSection = () => {
         <div className="max-w-3xl text-center mx-auto">
           <p className="text-sm md:text-base font-heading font-semibold text-primary"></p>
           <h2 className="mt-2 text-2xl md:text-3xl font-heading font-bold text-foreground">
-            Escolher o seguro errado pode custar caro
+            Um único erro pode gerar um prejuízo milionário...
           </h2>
           <p className="mt-3 text-sm md:text-base text-muted-foreground leading-relaxed">
-            Muitos proprietários só descobrem que escolheram o seguro errado quando acontece um <strong>sinistro</strong>.
+            Muitas empresas e profissionais só descobrem falhas na apólice quando recebem uma reclamação de terceiros ou uma notificação judicial.
           </p>
 
           <p className="mt-3 text-base md:text-lg font-bold leading-relaxed">
-            <span className="text-primary">Por isso, escolher a corretora certa é tão importante quanto escolher o seguro.</span>
+            <span className="text-primary">Por isso, escolher a corretora certa é tão importante quanto definir os limites e coberturas do seu seguro de Responsabilidade Civil.</span>
           </p>
         </div>
       </div>

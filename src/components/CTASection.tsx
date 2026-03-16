@@ -25,12 +25,15 @@ const CTASection = () => {
 
     const nome = String(formData.get("nome") ?? "").trim();
     const email = String(formData.get("email") ?? "").trim();
+    const ramo = String(formData.get("ramo") ?? "").trim();
 
-    if (!nome || !email || !whatsapp.trim()) {
-      setFeedbackMessage("Preencha todos os campos para enviar o formulario.");
+
+    if (!nome || !email || !whatsapp.trim() || !ramo) {
+      setFeedbackMessage("Preencha todos os campos para enviar o formulário.");
       setShowSuccessPopup(false);
       return;
     }
+    // O campo especialidade é opcional, mas pode ser usado aqui se necessário
 
     setFeedbackMessage("");
     setShowSuccessPopup(true);
@@ -43,12 +46,12 @@ const CTASection = () => {
       <div className="container px-4 md:px-8 text-center">
 
         <h2 className="text-2xl md:text-4xl font-heading font-extrabold text-primary-foreground">
-          Não perca mais tempo.{" "}
-          <span className="text-primary-foreground/90 block mt-1">Faça seu estudo agora.</span>
+          Proteja seu patrimônio. {" "}
+          <span className="text-primary-foreground/90 block mt-1">Solicite sua cotação de RC agora.</span>
         </h2>
 
         <div className="mt-6 flex flex-col sm:flex-row items-center justify-center gap-4 text-primary-foreground/80 text-sm">
-          <span className="flex items-center gap-1.5"><CheckCircle2 className="h-4 w-4 text-primary-foreground" /> Atendimento personalizado</span>
+          <span className="flex items-center gap-1.5"><CheckCircle2 className="h-4 w-4 text-primary-foreground" /> Consultoria especializada em responsabilidade civil</span>
         </div>
 
         <form onSubmit={handleSubmit} className="mt-10 max-w-3xl mx-auto bg-primary-foreground/10 border border-primary-foreground/20 rounded-xl p-5 md:p-6 text-left">
@@ -60,7 +63,7 @@ const CTASection = () => {
 
             <div className="space-y-2">
               <Label htmlFor="cta-email" className="text-primary-foreground font-semibold">*E-MAIL:</Label>
-              <Input id="cta-email" name="email" type="email" placeholder="voce@empresa.com" className="bg-primary-foreground text-primary placeholder:text-primary/60 border-primary-foreground/50" required />
+              <Input id="cta-email" name="email" type="email" placeholder="nome@empresa.com" className="bg-primary-foreground text-primary placeholder:text-primary/60 border-primary-foreground/50" required />
             </div>
 
             <div className="space-y-2">
@@ -80,12 +83,17 @@ const CTASection = () => {
 
           </div>
 
+          <div className="space-y-2 md:col-span-2 mt-4">
+            <Label htmlFor="cta-ramo" className="text-primary-foreground font-semibold">*RAMO DE ATIVIDADE:</Label>
+            <Input id="cta-ramo" name="ramo" type="text" placeholder="Ex: Odontologia, Engenharia, Medicina..." className="bg-primary-foreground text-primary placeholder:text-primary/60 border-primary-foreground/50" required />
+          </div>
+
           <p className="mt-6 text-sm text-primary-foreground/90">
-            Ao enviar, concordo em receber comunicações e conteúdos da FBN.
+            Ao enviar, concordo em receber comunicações e conteúdos da FBN sobre seguros.
           </p>
 
           <Button type="submit" size="lg" className="mt-6 w-full md:w-auto bg-primary-foreground text-primary hover:bg-primary-foreground/90 font-heading font-bold text-base h-12">
-            Enviar dados para estudo
+            Enviar dados para cotação
           </Button>
 
           {feedbackMessage ? (

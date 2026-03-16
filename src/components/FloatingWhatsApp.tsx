@@ -3,7 +3,7 @@ import { MessageCircle } from "lucide-react";
 const FloatingWhatsApp = () => {
   return (
     <a
-      href="https://wa.me/5511943880362?text=Olá! Gostaria de saber mais sobre os planos de saúde."
+      href="https://wa.me/5511943880362?text=Olá! Gostaria de saber mais sobre o seguro de responsabilidade civil."
       target="_blank"
       rel="noopener noreferrer"
       className="fixed bottom-6 right-6 z-50 bg-primary hover:bg-primary/90 text-primary-foreground rounded-full p-4 shadow-xl shadow-primary/30 transition-all hover:scale-110 group"

@@ -9,28 +9,28 @@ import { Button } from "@/components/ui/button";
 const faqs = [
   {
     question: "Como funciona o estudo da FBN?",
-    answer: `O Estudo FBN é uma análise feita por especialistas para identificar o seguro automotivo mais adequado para o seu perfil.
-    Avaliamos o tipo de veículo, rotina de uso, região de circulação e coberturas necessárias. Com base nisso, apresentamos opções com melhor equilíbrio entre proteção e investimento.`,
+    answer: `O Estudo FBN é uma análise feita por especialistas para identificar o seguro de responsabilidade civil mais adequado para o seu perfil.
+    Avaliamos atividade, operação, contratos e exposições a terceiros. Com base nisso, apresentamos opções com melhor equilíbrio entre proteção e investimento.`,
   },
   {
-    question: "Quais informações são necessárias para realizar o estudo do seguro automotivo?",
+    question: "Quais informações são necessárias para realizar o estudo do seguro RC?",
     answer:
-      "Normalmente solicitamos dados básicos do condutor principal, informações do veículo e histórico de uso. Esses dados ajudam a montar um estudo preciso e alinhado ao seu risco.",
+      "Normalmente solicitamos dados da empresa ou profissional, atividades exercidas, faturamento e histórico de sinistros. Esses dados ajudam a montar um estudo preciso e alinhado ao seu risco.",
   },
   {
-    question: "O seguro automotivo tem carência?",
+    question: "O seguro de responsabilidade civil tem carência?",
     answer:
       "Em geral, o seguro passa a valer conforme as regras da proposta e a confirmação de vigência da seguradora. A equipe da FBN orienta cada etapa para que você saiba exatamente quando sua cobertura inicia.",
   },
   {
-    question: "Posso personalizar as coberturas do meu seguro?",
+    question: "Posso personalizar limites e coberturas do meu seguro RC?",
     answer:
-      "Sim. É possível ajustar franquia, cobertura para terceiros, vidros, carro reserva, assistência 24h e outras proteções adicionais conforme sua necessidade.",
+      "Sim. É possível ajustar limite de indenização, franquia, coberturas específicas por atividade e extensões adicionais conforme sua necessidade.",
   },
   {
-    question: "Como faço para iniciar meu estudo?",
+    question: "Como faço para iniciar minha cotação?",
     answer:
-      "Clique em [CTA_ESTUDO] e envie suas informações básicas. A equipe da FBN entra em contato para montar a melhor solução de seguro automotivo.",
+      "Clique em [CTA_ESTUDO] e envie suas informações básicas. A equipe da FBN entra em contato para montar a melhor solução de seguro de responsabilidade civil.",
   },
 ];
 
@@ -46,7 +46,7 @@ const FAQSection = () => {
           Perguntas <span className="text-primary">Frequentes</span>
         </h2>
         <p className="text-center text-muted-foreground mb-10">
-          Tire suas dúvidas antes de solicitar seu estudo.
+          Tire suas dúvidas antes de solicitar sua cotação.
         </p>
 
         <Accordion type="single" collapsible className="w-full">
@@ -61,7 +61,7 @@ const FAQSection = () => {
                     <span className="whitespace-pre-line">{part}</span>
                     {partIndex < allParts.length - 1 && (
                       <Button variant="link" className="h-auto p-0 align-baseline font-semibold" onClick={scrollToForm}>
-                        Realizar Estudo
+                        Solicitar cotação
                       </Button>
                     )}
                   </span>

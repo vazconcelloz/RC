@@ -1,25 +1,25 @@
-import { CarFront, ShieldCheck, FileSearch, Headset } from "lucide-react";
+import { Building2, ShieldCheck, FileSearch, Headset } from "lucide-react";
 
 const features = [
   {
-    icon: CarFront,
-    title: "Especialistas em veículos \n premium e blindados",
-    description: "Protegemos veículos de alto valor e blindados com coberturas dimensionadas para cada necessidade.",
+    icon: Building2,
+    title: "Especialistas em \n responsabilidade civil",
+    description: "Protegemos operações empresariais e profissionais com coberturas dimensionadas para cada exposição.",
   },
   {
     icon: ShieldCheck,
-    title: "Atendimento eficiente de verdade",
-    description: "O mercado oferece respostas genéricas. Nós entregamos soluções adaptadas à sua necessidade.",
+    title: "Atendimento consultivo \n de verdade",
+    description: "O mercado oferece respostas genéricas. Nós entregamos soluções alinhadas ao seu risco real.",
   },
   {
     icon: FileSearch,
-    title: "Cobertura realmente \n adequada",
-    description: "Estruturamos o seguro considerando as necessidades reais do seu veículo e perfil de uso."
+    title: "Apólice realmente \n adequada",
+    description: "Estruturamos limites, coberturas e cláusulas considerando o seu segmento e rotina operacional."
   },
   {
     icon: Headset,
     title: "Suporte durante todo o \n contrato",
-    description: "Continuamos ao seu lado após a contratação, acompanhando renovações e auxiliando em sinistros.",
+    description: "Continuamos ao seu lado após a contratação, acompanhando renovações, notificações e sinistros.",
   },
 ];
 
@@ -28,9 +28,9 @@ const WhySection = () => {
     <section className="pt-0 pb-13 md:pt-1 md:pb-24 bg-background">
       <div className="container px-4 md:px-8">
         <h2 className="text-2xl md:text-3xl font-heading font-bold text-center text-foreground">
-          Por que{" "}
-          <span className="text-primary">mais de 10.000</span>{" "}
-          clientes escolheram a FBN?
+          Como a{" "}
+          <span className="text-primary">FBN</span>{" "}
+          te protege contra os riscos de Responsabilidade Civil?
         </h2>
 
 
