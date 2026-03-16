@@ -22,7 +22,7 @@ const Header = () => {
           </nav>
 
           <Button size="sm" className="font-semibold" onClick={scrollToForm}>
-            Solicitar cotação RC
+            Realizar estudo RC
           </Button>
 
         </div>

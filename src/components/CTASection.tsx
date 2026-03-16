@@ -47,7 +47,7 @@ const CTASection = () => {
 
         <h2 className="text-2xl md:text-4xl font-heading font-extrabold text-primary-foreground">
           Proteja seu patrimônio. {" "}
-          <span className="text-primary-foreground/90 block mt-1">Solicite sua cotação de RC agora.</span>
+          <span className="text-primary-foreground/90 block mt-1">Realize seu estudo de RC agora.</span>
         </h2>
 
         <div className="mt-6 flex flex-col sm:flex-row items-center justify-center gap-4 text-primary-foreground/80 text-sm">
@@ -93,7 +93,7 @@ const CTASection = () => {
           </p>
 
           <Button type="submit" size="lg" className="mt-6 w-full md:w-auto bg-primary-foreground text-primary hover:bg-primary-foreground/90 font-heading font-bold text-base h-12">
-            Enviar dados para cotação
+            Enviar dados para estudo
           </Button>
 
           {feedbackMessage ? (

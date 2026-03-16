@@ -28,7 +28,7 @@ const faqs = [
       "Sim. É possível ajustar limite de indenização, franquia, coberturas específicas por atividade e extensões adicionais conforme sua necessidade.",
   },
   {
-    question: "Como faço para iniciar minha cotação?",
+    question: "Como faço para iniciar meu estudo?",
     answer:
       "Clique em [CTA_ESTUDO] e envie suas informações básicas. A equipe da FBN entra em contato para montar a melhor solução de seguro de responsabilidade civil.",
   },
@@ -46,7 +46,7 @@ const FAQSection = () => {
           Perguntas <span className="text-primary">Frequentes</span>
         </h2>
         <p className="text-center text-muted-foreground mb-10">
-          Tire suas dúvidas antes de solicitar sua cotação.
+          Tire suas dúvidas antes de realizar seu estudo.
         </p>
 
         <Accordion type="single" collapsible className="w-full">
@@ -61,7 +61,7 @@ const FAQSection = () => {
                     <span className="whitespace-pre-line">{part}</span>
                     {partIndex < allParts.length - 1 && (
                       <Button variant="link" className="h-auto p-0 align-baseline font-semibold" onClick={scrollToForm}>
-                        Solicitar cotação
+                        Realizar estudo
                       </Button>
                     )}
                   </span>

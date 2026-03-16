@@ -36,12 +36,12 @@ const HeroSection = () => {
               Responsabilidade Civil
               <br />
               <span className="block text-primary-foreground/90">
-                <strong>para empresas e profissionais</strong>
+                <strong>para profissionais</strong>
               </span>
             </h1>
 
             <p className="mt-4 text-primary-foreground/85 text-base md:text-lg leading-relaxed max-w-xl mx-auto md:mx-0">
-              Milhares de clientes já escolheram a FBN para estruturar suas apólices de responsabilidade civil.
+              Mais de 3.000 profissionais já escolheram a FBN para proteger sua carreira.
               <br />
               
             </p>
@@ -52,7 +52,7 @@ const HeroSection = () => {
                 onClick={scrollToForm}
                 className="w-full justify-between bg-primary-foreground hover:bg-primary-foreground/90 text-primary font-heading font-bold text-base h-14 shadow-lg"
               >
-                <span>Solicitar cotação</span>
+                <span>Realizar estudo</span>
                 <ArrowRight className="h-5 w-5" />
               </Button>
             </div>
