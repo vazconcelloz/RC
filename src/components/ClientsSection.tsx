@@ -22,7 +22,7 @@ const clientsRow1: ClientLogo[] = [
   { name: "Odontoclinic", logo: logoOdontoclinic },
   { name: "Oralunic", logo: logoOralunic },
   { name: "Sorridents", logo: logoSorridents },
-  { name: "Alem do Olhar", logo: logoAlemDoOlhar, logoClassName: "max-h-56 md:max-h-72 w-auto max-w-[300px]" },
+  { name: "Alem do Olhar", logo: logoAlemDoOlhar, logoClassName: "max-h-72 md:max-h-[28rem] w-auto max-w-[320px]" },
 ];
 
 const clientsRow2: ClientLogo[] = [
@@ -43,7 +43,7 @@ const MarqueeRow = ({ clients, direction }: { clients: ClientLogo[]; direction: 
         {tripled.map((client, index) => (
           <div
             key={`${client.name}-${index}`}
-            className={`grid place-items-center h-20 md:h-24 w-44 mr-8 md:mr-10 p-3 shrink-0 overflow-visible ${client.name === 'Alem do Olhar' ? 'ml-[-1.5rem] mr-20 md:mr-32 -mb-8 md:-mb-12' : ''}`}
+            className={`grid place-items-center h-20 md:h-24 w-44 mr-8 md:mr-10 p-3 shrink-0 overflow-visible ${client.name === 'Alem do Olhar' ? '-ml-6 mr-20 md:mr-32 -mb-16 md:-mb-20 -translate-y-2 md:-translate-y-4' : ''}`}
           >
             <img
               src={client.logo}
