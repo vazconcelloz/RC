@@ -8,29 +8,28 @@ import { Button } from "@/components/ui/button";
 
 const faqs = [
   {
-    question: "Como funciona o estudo da FBN?",
-    answer: `O Estudo FBN é uma análise feita por especialistas para identificar o seguro de responsabilidade civil mais adequado para o seu perfil.
-    Avaliamos atividade, operação, contratos e exposições a terceiros. Com base nisso, apresentamos opções com melhor equilíbrio entre proteção e investimento.`,
+    question: "O que é o seguro de Responsabilidade Civil Profissional?",
+    answer: `É um seguro que protege o profissional da saúde contra custos relacionados a reclamações, processos judiciais e administrativos decorrentes da sua atuação profissional.`,
   },
   {
-    question: "Quais informações são necessárias para realizar o estudo do seguro RC?",
+    question: "Quem deve contratar esse tipo de seguro?",
     answer:
-      "Normalmente solicitamos dados da empresa ou profissional, atividades exercidas, faturamento e histórico de sinistros. Esses dados ajudam a montar um estudo preciso e alinhado ao seu risco.",
+      "Qualquer profissional da área da saúde que tenha contato direto com pacientes, como médicos, dentistas, enfermeiros, fisioterapeutas, entre outros.",
   },
   {
-    question: "O seguro de responsabilidade civil tem carência?",
+    question: "O seguro cobre erros médicos e falhas profissionais?",
     answer:
-      "Em geral, o seguro passa a valer conforme as regras da proposta e a confirmação de vigência da seguradora. A equipe da FBN orienta cada etapa para que você saiba exatamente quando sua cobertura inicia.",
+      "Sim! Ele pode cobrir situações relacionadas a alegações de erro, omissão ou falha profissional, desde que estejam dentro das condições previstas na apólice.",
   },
   {
-    question: "Posso personalizar limites e coberturas do meu seguro RC?",
+    question: "Posso contratar com retroatividade?",
     answer:
-      "Sim. É possível ajustar limite de indenização, franquia, coberturas específicas por atividade e extensões adicionais conforme sua necessidade.",
+      "Sim! E isso é um dos pontos mais importantes do seguro. A retroatividade garante cobertura para atendimentos realizados antes da contratação. Na prática, isso significa que você não fica exposto por procedimentos realizados no passado.",
   },
   {
-    question: "Como faço para iniciar meu estudo?",
+    question: "Existe carência para utilização do seguro?",
     answer:
-      "Clique em [CTA_ESTUDO] e envie suas informações básicas. A equipe da FBN entra em contato para montar a melhor solução de seguro de responsabilidade civil.",
+      "Não necessariamente. Em muitos casos, a cobertura começa após a contratação, conforme as condições da apólice. Clique em [CTA_ESTUDO] para entender como funciona a carência e a retroatividade no seu caso específico.",
   },
 ];
 

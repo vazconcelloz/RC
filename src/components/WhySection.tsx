@@ -3,13 +3,13 @@ import { Building2, ShieldCheck, FileSearch, Headset } from "lucide-react";
 const features = [
   {
     icon: Building2,
-    title: "Especialistas em \n responsabilidade civil",
-    description: "Protegemos operações empresariais e profissionais com coberturas dimensionadas para cada exposição.",
+    title: "Mais de 3.0000 \n profissionais protegidos",
+    description: "Somos especialistas em responsabilidade civil, protegemos profissionais e unidades clínicas em diversas áreas",
   },
   {
     icon: ShieldCheck,
     title: "Atendimento consultivo \n de verdade",
-    description: "O mercado oferece respostas genéricas. Nós entregamos soluções alinhadas ao seu risco real.",
+    description: "O mercado oferece soluções genéricas. Nós entregamos soluções alinhadas ao seu risco real de acordo com a sua operação.",
   },
   {
     icon: FileSearch,

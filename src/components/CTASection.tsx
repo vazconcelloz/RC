@@ -47,7 +47,7 @@ const CTASection = () => {
 
         <h2 className="text-2xl md:text-4xl font-heading font-extrabold text-primary-foreground">
           Proteja seu patrimônio. {" "}
-          <span className="text-primary-foreground/90 block mt-1">Realize seu estudo de RC agora.</span>
+          <span className="text-primary-foreground/90 block mt-1">Realize seu estudo agora.</span>
         </h2>
 
         <div className="mt-6 flex flex-col sm:flex-row items-center justify-center gap-4 text-primary-foreground/80 text-sm">
@@ -85,7 +85,7 @@ const CTASection = () => {
 
           <div className="space-y-2 md:col-span-2 mt-4">
             <Label htmlFor="cta-ramo" className="text-primary-foreground font-semibold">*RAMO DE ATIVIDADE:</Label>
-            <Input id="cta-ramo" name="ramo" type="text" placeholder="Ex: Odontologia, Engenharia, Medicina..." className="bg-primary-foreground text-primary placeholder:text-primary/60 border-primary-foreground/50" required />
+            <Input id="cta-ramo" name="ramo" type="text" placeholder="Ex: Odontologia, Medicina, Estética..." className="bg-primary-foreground text-primary placeholder:text-primary/60 border-primary-foreground/50" required />
           </div>
 
           <p className="mt-6 text-sm text-primary-foreground/90">

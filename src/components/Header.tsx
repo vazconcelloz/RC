@@ -22,7 +22,7 @@ const Header = () => {
           </nav>
 
           <Button size="sm" className="font-semibold" onClick={scrollToForm}>
-            Realizar estudo RC
+            Realizar estudo
           </Button>
 
         </div>

@@ -1,11 +1,11 @@
-import { BriefcaseBusiness, ChartNoAxesColumn, Handshake, LayoutDashboard, ShieldCheck, MapPinned } from "lucide-react";
+import { BriefcaseBusiness, ChartNoAxesColumn, Handshake, LayoutDashboard, ShieldCheck, CircleDollarSign, Clock, } from "lucide-react";
 
 const coverages = [
   {
-    icon: BriefcaseBusiness,
-    title: "Cobertura personalizada para sua atividade",
+    icon: ShieldCheck,
+    title: "Cobertura personalizada para sua operação",
     description:
-      "Estruturamos o seguro conforme sua operação, porte da empresa e exposição a riscos para evitar lacunas de proteção.",
+      "Estruturamos o seguro conforme sua operação, porte da clínica e exposição a riscos para evitar lacunas de proteção.",
   },
   {
     icon: ChartNoAxesColumn,
@@ -14,26 +14,26 @@ const coverages = [
       "Comparamos opções entre seguradoras para equilibrar limite de indenização, cobertura e valor final sem perder qualidade.",
   },
   {
+    icon: Clock,
+    title: "Retroatividade",
+    description:
+      "Cobertura que protege o profissional por procedimentos realizados antes da contratação do seguro",
+  },
+  {
+    icon: CircleDollarSign,
+    title: "Indenização por danos causados a terceiros",
+    description:
+      "Proteção financeira indenização de danos materiais, corporais e morais causados a terceiros no exercício da sua atividade",
+  },
+  {
+    icon: BriefcaseBusiness,
+    title: "Custos de defesa",
+    description:
+      "Cobre os gastos legais em processos judiciais, como honorários de advocatícios e despesas relacionadas à defesa",
+  },
+  {
     icon: Handshake,
-    title: "Cobertura para terceiros",
-    description:
-      "Proteção para danos materiais, corporais e morais causados a terceiros no exercício da sua atividade.",
-  },
-  {
-    icon: LayoutDashboard,
-    title: "Defesa jurídica e suporte técnico",
-    description:
-      "Apoio especializado para conduzir notificações, reclamações e processos relacionados à responsabilidade civil.",
-  },
-  {
-    icon: ShieldCheck,
-    title: "Extensões de cobertura",
-    description:
-      "Inclua coberturas adicionais como RC Empregador, RC Operações, RC Produtos e outras conforme sua necessidade.",
-  },
-  {
-    icon: MapPinned,
-    title: "Suporte em sinistro do início ao fim",
+    title: "Suporte em sinistros",
     description:
       "Acompanhamos todo o processo junto à seguradora para reduzir burocracia e acelerar cada etapa da sua indenização.",
   },

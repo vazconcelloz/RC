@@ -5,7 +5,7 @@ const ProblemsSection = () => {
         <div className="max-w-3xl text-center mx-auto">
           <p className="text-sm md:text-base font-heading font-semibold text-primary"></p>
           <h2 className="mt-2 text-2xl md:text-3xl font-heading font-bold text-foreground">
-            Um único erro pode gerar um prejuízo milionário...
+            Você não precisa errar para ser processado!
           </h2>
           <p className="mt-3 text-sm md:text-base text-muted-foreground leading-relaxed">
             Muitas empresas e profissionais só descobrem falhas na apólice quando recebem uma reclamação de terceiros ou uma notificação judicial.

@@ -41,8 +41,10 @@ const HeroSection = () => {
             </h1>
 
             <p className="mt-4 text-primary-foreground/85 text-base md:text-lg leading-relaxed max-w-xl mx-auto md:mx-0">
-              Mais de 3.000 profissionais já escolheram a FBN para proteger sua carreira.
+              Você investiu muito para conquistar uma carreira de sucesso! 
               <br />
+              Deixe que a FBN proteja o que realmente importa para você!
+              
               
             </p>
 
