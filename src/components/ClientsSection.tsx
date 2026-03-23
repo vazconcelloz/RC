@@ -22,7 +22,7 @@ const clientsRow1: ClientLogo[] = [
   { name: "Odontoclinic", logo: logoOdontoclinic },
   { name: "Oralunic", logo: logoOralunic },
   { name: "Sorridents", logo: logoSorridents },
-  { name: "Alem do Olhar", logo: logoAlemDoOlhar, logoClassName: "max-h-72 md:max-h-[28rem] w-auto max-w-[320px]" },
+  { name: "Alem do Olhar", logo: logoAlemDoOlhar, logoClassName: "max-h-[28rem] md:max-h-[36rem] w-auto max-w-[300px] md:max-w-[320px]" },
 ];
 
 const clientsRow2: ClientLogo[] = [
